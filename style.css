@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.contenedor {
+  background: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.formulario {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.formulario button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: #1d4ed8;
+}
+
+#listaTareas {
+  list-style: none;
+}
+
+#listaTareas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#listaTareas li.completada span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+#listaTareas li button {
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
